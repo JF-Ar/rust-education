@@ -1,8 +1,4 @@
-use rpassword::prompt_password;
 use std::io::Write;
-pub fn wait_for_enter() {
-    prompt_password("Press ENTER to continue...").unwrap();
-}
 
 pub fn clear() {
     print!("{esc}c", esc = 27 as char);
@@ -35,4 +31,9 @@ fn show_items(items: &[&str]) {
     for (i, item) in items.iter().enumerate() {
         println!("{} - {}", i + 1, item);
     }
+}
+
+pub fn description(description: &'static str) -> &'static str {
+
+    return  description;
 }

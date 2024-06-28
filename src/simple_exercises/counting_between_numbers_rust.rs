@@ -1,19 +1,23 @@
 use std::io;
+use crate::utils::terminal::{clear, description};
 
 fn get_numbers() -> (i32, i32) {
 
-    let mut number1: i32 = 0;
-    let mut number2: i32 = 0;
+    clear();
+
+    let descriptor = "You need to enter two numbers.\nAnd I will count down or up according to the first number.";
+
+    println!("{}", description(descriptor));
 
     println!("Enter the a number: ");
     let mut number1_str = String::new();
     io::stdin().read_line(&mut number1_str).unwrap();
-    number1 = number1_str.trim().parse::<i32>().unwrap();
+    let number1 = number1_str.trim().parse::<i32>().unwrap();
 
     println!("Enter other number: ");
     let mut number2_str = String::new();
     io::stdin().read_line(&mut number2_str).unwrap();
-    number2 = number2_str.trim().parse::<i32>().unwrap();
+    let number2 :i32 = number2_str.trim().parse::<i32>().unwrap();
 
     return (number1, number2)
 }
@@ -40,14 +44,12 @@ fn count_using_while(mut first_number: i32, second_number: i32) {
     }
 }
 
-fn count_using_for(mut first_number: i32, second_number: i32) {
+fn count_using_for(first_number: i32, second_number: i32) {
 
     let mut range_start = first_number;
     let mut range_end = second_number;
-    let mut step = 1;
 
     if first_number > second_number {
-        step = -1;
         range_start = second_number;
         range_end = first_number + 1;
     }
