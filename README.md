@@ -16,12 +16,12 @@ Each project showcases different concepts and techniques in Rust programming.
 
 ### Navigate to a project folder:
 
-    cd rust-education/simple_exercises
-    # or
-    cd rust-education/aws_utilities
+    cd rust-education
 
 ### Run the project:
     cargo run
+
+Now just follow the instructions in the terminal
 
 # Contributions:
 
