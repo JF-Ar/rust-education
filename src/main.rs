@@ -10,7 +10,11 @@ fn main() {
 
     loop {
 
-        let items = ["Counting Numbers", "Find Highest Number in a Vector"];
+        let items = [
+            "Counting Numbers",
+            "Find Highest Number in a Vector",
+            "Number is Prime",
+        ];
         let menu = show_menu("Principal", &items, true);
 
         clear();
@@ -18,7 +22,7 @@ fn main() {
         match menu {
             1 => simple_exercises::counting_numbers(),
             2 => simple_exercises::largest_number_in_the_vector(),
-            3 => exit(0),
+            3 => simple_exercises::check_prime_number(),
             4 => exit(0),
             5 => exit(0),
             _ => exit(0),
