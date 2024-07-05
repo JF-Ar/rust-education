@@ -4,6 +4,7 @@ use crate::utils::terminal::{show_menu};
 mod counting_between_numbers_rust;
 mod largest_number_found;
 mod prime_number;
+mod multiplication_table;
 
 pub fn counting_numbers() {
 
@@ -39,5 +40,10 @@ pub fn check_prime_number() {
         1 => prime_number::get_prime_number(),
         _ => exit(0),
     }
+}
+
+pub fn multiplication_table() {
+
+    multiplication_table::get_multiplicative_table();
 }
 

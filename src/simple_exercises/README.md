@@ -11,6 +11,9 @@
  - Receive a number and check if this input number is prime number or not
    This function must be able to receive number and return if is prime or not.<br>
    <i>prime_number.rs</i>
+ - Receive an integer and displays its multiplication table.
+   This function must be able to receive an integer and display its multiplication table.<br>
+   <i>multiplication_table.rs</i>
 -----
 
 # Getting Started:
