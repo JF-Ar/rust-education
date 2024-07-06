@@ -5,6 +5,7 @@ mod counting_between_numbers_rust;
 mod largest_number_found;
 mod prime_number;
 mod multiplication_table;
+mod unique_characters;
 
 pub fn counting_numbers() {
 
@@ -45,5 +46,18 @@ pub fn check_prime_number() {
 pub fn multiplication_table() {
 
     multiplication_table::get_multiplicative_table();
+}
+
+pub fn has_unique_characters() {
+
+    let items = ["Return Unique (Without Structure)", "Return Unique (With Structure)"];
+
+    let menu = show_menu("Return Unique Characters", &items, true);
+
+    match menu {
+        1 => unique_characters::return_unique_characters(),
+        2 => unique_characters::return_unique_characters_128(),
+        _ => exit(0),
+    }
 }
 

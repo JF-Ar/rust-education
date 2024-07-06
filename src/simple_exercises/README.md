@@ -14,6 +14,9 @@
  - Receive an integer and displays its multiplication table.
    This function must be able to receive an integer and display its multiplication table.<br>
    <i>multiplication_table.rs</i>
+ - Implement an algorithm that receives a string and returns if the string has only unique characters.
+   This function must be able to receive a string and return if the string has only unique characters.<br>
+   <i>unique_characters.rs</i>
 -----
 
 # Getting Started:

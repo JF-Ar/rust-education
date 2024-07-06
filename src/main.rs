@@ -15,6 +15,7 @@ fn main() {
             "Find Highest Number in a Vector",
             "Number is Prime",
             "Multiplication Table",
+            "Unique Characters",
         ];
         let menu = show_menu("Principal", &items, true);
 
@@ -25,7 +26,7 @@ fn main() {
             2 => simple_exercises::largest_number_in_the_vector(),
             3 => simple_exercises::check_prime_number(),
             4 => simple_exercises::multiplication_table(),
-            5 => exit(0),
+            5 => simple_exercises::has_unique_characters(),
             _ => exit(0),
         }
     }
