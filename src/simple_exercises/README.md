@@ -17,6 +17,9 @@
  - Implement an algorithm that receives a string and returns if the string has only unique characters.
    This function must be able to receive a string and return if the string has only unique characters.<br>
    <i>unique_characters.rs</i>
+ - Implement an algorithm that receives a number and returns if the number is a palindrome.
+   This function must be able to receive a number and return if the number is a palindrome.<br>
+   <i>palindrome.rs</i>
 -----
 
 # Getting Started:

@@ -6,6 +6,7 @@ mod largest_number_found;
 mod prime_number;
 mod multiplication_table;
 mod unique_characters;
+mod palindrome;
 
 pub fn counting_numbers() {
 
@@ -46,6 +47,11 @@ pub fn check_prime_number() {
 pub fn multiplication_table() {
 
     multiplication_table::get_multiplicative_table();
+}
+
+pub fn palindrome_number() {
+
+    palindrome::check_palindrome();
 }
 
 pub fn has_unique_characters() {

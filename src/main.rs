@@ -16,6 +16,7 @@ fn main() {
             "Number is Prime",
             "Multiplication Table",
             "Unique Characters",
+            "Check Palindrome Number",
         ];
         let menu = show_menu("Principal", &items, true);
 
@@ -27,6 +28,7 @@ fn main() {
             3 => simple_exercises::check_prime_number(),
             4 => simple_exercises::multiplication_table(),
             5 => simple_exercises::has_unique_characters(),
+            6 => simple_exercises::palindrome_number(),
             _ => exit(0),
         }
     }
