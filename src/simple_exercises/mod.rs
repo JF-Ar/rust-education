@@ -7,6 +7,7 @@ mod prime_number;
 mod multiplication_table;
 mod unique_characters;
 mod palindrome;
+mod rotate_vector;
 
 pub fn counting_numbers() {
 

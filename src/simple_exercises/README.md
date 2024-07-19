@@ -20,6 +20,9 @@
  - Implement an algorithm that receives a number and returns if the number is a palindrome.
    This function must be able to receive a number and return if the number is a palindrome.<br>
    <i>palindrome.rs</i>
+ - Implement an algorithm that receives an integer that will use to rotate a vector.
+   This function must be able to receive a vector and an integer and return the vector rotated.<br>
+   <i>rotate_vector.rs</i>
 -----
 
 # Getting Started:
